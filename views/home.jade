@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+    div.row
+        div.col-md-4
+            h3 Rooms
+            div#rooms.list-group
+        div.col-md-8
+            h3#roomName
+            textarea#messages.form-control(rows=15)
+            button.btn.btn-default#delete Delete All Messages
+            h3 Post A Message
+            textarea#message.form-control(rows=2)
+            button.btn.btn-primary#post Post
+
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+    script(src="/home.js",type="text/javascript")
